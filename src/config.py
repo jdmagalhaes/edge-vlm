@@ -1,4 +1,5 @@
-"""Shared paths and settings for the DotVLM data pipeline."""
+#!/usr/bin/env python3
+"""Paths and settings for the DotVLM data pipeline."""
 
 import os
 
@@ -22,7 +23,7 @@ GQA_JSON = {
     "train": os.path.join(JSON_DIR, "gqa_grouped_train.json"),
     "val": os.path.join(JSON_DIR, "gqa_grouped_val.json"),
 }
-VG_JSON = os.path.join(JSON_DIR, "vg_grouped.json")  # split 80/20 in code
+VG_JSON = os.path.join(JSON_DIR, "vg_grouped.json")
 VG_TRAIN_RATIO = 0.8
 
 CHECKPOINT_PATH = "./checkpoints/best_model.pt"

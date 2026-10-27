@@ -11,8 +11,6 @@ training code treats every dataset identically.
 
 Usage:
     python download.py             # download anything that is missing
-    python download.py --migrate   # build the JSON files from the old
-                                   # *_cached_paths HF caches (no re-download)
 """
 
 import argparse
@@ -105,11 +103,4 @@ def migrate_legacy_caches():
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format="%(message)s")
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--migrate", action="store_true",
-                        help="reuse existing *_cached_paths caches instead of re-downloading")
-    args = parser.parse_args()
-
-    if args.migrate:
-        migrate_legacy_caches()
     download_all()  # skips whatever already exists

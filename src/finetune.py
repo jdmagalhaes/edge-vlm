@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Fine-tune DotVLM on all datasets, but prioritize localized_narratives for more verbose descriptions."""
 
 import math
 from pathlib import Path
@@ -21,8 +22,8 @@ WARMUP_EPOCHS = 1
 MIN_LR_RATIO = 0.05
 PATIENCE = 3
 
-INIT_CKPT = Path("checkpoints/best_model.pt")      # stage 1 weights (read only)
-OUT_CKPT = Path("checkpoints/best_model_ft.pt")    # separate file, no overwrite
+INIT_CKPT = "./checkpoints/best_model.pt"
+OUT_CKPT = "./checkpoints/best_model_ft.pt"
 
 
 def main():

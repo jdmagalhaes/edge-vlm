@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-"""Simple training and validation loop for DotVLM."""
 
 import math
 import random
@@ -25,7 +24,7 @@ EPOCHS = 25
 PATIENCE = 3
 WARMUP_EPOCHS = 1
 MIN_LR_RATIO = 0.05
-CHECKPOINT_DIR = Path("checkpoints")
+CHECKPOINT_DIR = ".checkpoints/"
 RESUME = True # Resume from the last checkpoint or not
 
 
@@ -118,7 +117,7 @@ def validate(
 
 def main() -> None:
     set_seed()
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = cfg.DEVICE
     print(f"Using device: {device}")
 
     model = DotVLM(

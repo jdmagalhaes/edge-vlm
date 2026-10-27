@@ -4,7 +4,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 import timm
 
-# Original DotVLM model (before TFLite and QAT optimizations)
 
 class DepthwiseSeparableConv(nn.Module):
     def __init__(self, in_channels, out_channels, kernel_size, stride=1, padding=0, dilation=1, bias=True):
@@ -356,6 +355,3 @@ if __name__ == "__main__":
     total_params = sum(p.numel() for p in model.parameters())
     print(f"\nTotal trainable parameters: {total_trainable_params:,}") # 50,337,715
     print(f"Total parameters: {total_params:,}") # 50,337,715
-
-    print("\nModel modules:")
-    print(model)

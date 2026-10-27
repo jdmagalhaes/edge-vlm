@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import torch
 from torchvision import transforms
 from PIL import Image
@@ -74,7 +75,7 @@ def main():
     tokenizer = utils.smolvlm_tokenizer
     old_to_new, new_to_old = utils.load_vocab_mappings()
 
-    image_path = "test_data/dog1.jpg"
+    image_path = "test_data/dog1.jpg" # Set your own image path here
     question = "Describe this image."
 
     answer = answer_question(image_path, question, model, tokenizer, old_to_new, new_to_old)
