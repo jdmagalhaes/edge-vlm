@@ -1,0 +1,19 @@
+# .direnv directory environment file
+.direnv/
+
+# .venv & pycache directories
+.venv/
+src/__pycache__/
+
+# checkpoints and logs
+src/checkpoint*/
+src/*.log
+
+
+# Other files to ignore
+src/dotvlm_coral/
+src/Old/
+src/model_for_coral.py
+src/json_data/
+src/test_data/
+src/vocab
