@@ -30,3 +30,45 @@ The model was trained from scratch using the following datasets and training/val
 | **Total images** | **461,904** | **40,200** |
 | **QA samples** | **1,957,200** | **169,702** |
 | **Batches** (batches of 64 QA samples) | **30,581** | **2,652** |
+
+### Unified Record Format
+Every source is turned into the same **record**, so all datasets go through one pipeline. A record holds one image and its QA pairs:
+
+```json
+{
+    "image_path": "/path/to/image.jpg",
+    "texts": [
+        {"user": "What is in the image?", "assistant": "A person riding a horse."},
+        {"user": "What is the person wearing?", "assistant": "A helmet and a jacket."}
+    ]
+}
+```
+
+Each record is expanded into one (image, question, answer) sample per QA pair, with at most 10 pairs per image.
+
+**The Cauldron** (Localized Narratives and TallyQA) already comes with questions and answers. `download.py` streams the subsets from HuggingFace, saves the images as JPEGs, and writes them directly as records.
+
+**COCO captions, GQA and Visual Genome QA** were first converted into a shared entry format. Each file is a list of groups, one per image, and each group is a list of QA entries, as shown below. `dataset.py` then matches each group to its image file and turns it into a record.
+
+```json
+[
+  [
+    {
+      "user": "Describe what you observe.",
+      "assistant": "An office cubicle with four different types of computers.",
+      "source": "coco_captions",
+      "image_id": 190236
+    },
+    {
+      "user": "Provide a description.",
+      "assistant": "The home office space seems to be very cluttered.",
+      "source": "coco_captions",
+      "image_id": 190236
+    }
+  ]
+]
+```
+
+COCO captions come without questions, so each caption was paired with one of a small set of generic prompts (e.g. "Describe this image.", "What do you see?", "Provide a description.", "What can you tell me about this image?"). GQA and Visual Genome QA keep their original questions. The preprocessed files are available at the HuggingFace repo [edge-vlm](https://huggingface.co/datasets/jdmagalhaes/edge-vlm). The images themselves are not included, so they must be downloaded from their original sources.
+
+### Vocabulary
