@@ -72,3 +72,20 @@ Each record is expanded into one (image, question, answer) sample per QA pair, w
 COCO captions come without questions, so each caption was paired with one of a small set of generic prompts (e.g. "Describe this image.", "What do you see?", "Provide a description.", "What can you tell me about this image?"). GQA and Visual Genome QA keep their original questions. The preprocessed files are available at the HuggingFace repo [edge-vlm](https://huggingface.co/datasets/jdmagalhaes/edge-vlm). The images themselves are not included, so they must be downloaded from their original sources.
 
 ### Vocabulary
+The model uses a reduced vocabulary of 8,000 tokens, including the required special tokens. 
+
+It is a subset of the [SmolVLM](https://huggingface.co/HuggingFaceTB/SmolVLM-Instruct) tokenizer (~49k tokens): the 8,000 most frequent tokens counted over a selection of The Cauldron's configs. 
+
+Text is tokenized with the SmolVLM tokenizer, each token ID is remapped to the reduced vocabulary, and any token outside it becomes `<unk>`.
+
+The vocabulary and mappings between the original and reduced IDs are available at the HuggingFace repo [edge-vlm](https://huggingface.co/datasets/jdmagalhaes/edge-vlm).
+
+The vocabulary file is a json containing:
+
+- `vocab`: the 8,000 tokens
+- `old_to_new`: SmolVLM token ID → reduced ID
+- `new_to_old`: reduced ID → SmolVLM token ID
+- `vocab_size`: 8000
+- `reserved_tokens`: the 4 special tokens (`<pad>`=0, `<eos>`=1, `<bos>`=2, `<unk>`=3)
+
+## Usage
