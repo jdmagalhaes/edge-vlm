@@ -15,5 +15,6 @@ src/dotvlm_coral/
 src/Old/
 src/model_for_coral.py
 src/json_data/
-src/test_data/
+src/test_data/*
+!src/test_data/dog1.jpg
 src/vocab

@@ -8,7 +8,7 @@ import config as cfg
 import utils
 
 
-def load_model(checkpoint_path=cfg.CHECKPOINT_FT_PATH, device=cfg.DEVICE):
+def load_model(checkpoint_path=cfg.CHECKPOINT_FT_PATH, device=cfg.DEVICE): # Set checkpoint_path to either cfg.CHECKPOINT_PATH or cfg.CHECKPOINT_FT_PATH
     model = DotVLM()
     checkpoint = torch.load(checkpoint_path, map_location=device)
     model.load_state_dict(checkpoint["model_state_dict"])
@@ -57,7 +57,7 @@ def generate_answer(model, image_tensor, question_tensor, device=cfg.DEVICE):
             bos_id=cfg.BOS_ID,
             eos_id=cfg.EOS_ID,
             temperature=0.7,
-            top_k=5,  # greedy
+            top_k=5,
         )
     return out.squeeze(0)
 
