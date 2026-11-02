@@ -35,7 +35,7 @@ Below are some good and some less good output examples:
       <b>Answer:</b> In this image we can see a statue of a person standing on the ground. In the background we can see trees, buildings, trees, poles, sky and clouds.
     </td>
     <td width="50%" valign="top">
-      <img src="docs/images/church.png" alt="Example 4" width="100%"><br>
+      <img src="src/test_data/church.png" alt="Example 4" width="100%"><br>
       <b>Input:</b> What are the main elements of this image?<br>
       <b>Output:</b> An old church with a large clock in the front.<br><br>
       <b>Input:</b> What is in front of the church?<br>
