@@ -44,58 +44,6 @@ Below are some good and some less good output examples:
   </tr>
 </table>
 
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <img src="src/test_data/dog1.jpg" alt="Example 4" width="100%"><br>
-      <b>Question:</b> Describe this image.<br>
-      <b>Answer:</b> A brown dog sitting on top of a bed.<br><br>
-      <b>Question:</b> Describe this image.<br>
-      <b>Answer:</b> A dog laying down with a blue blanket.
-    </td>
-    <td width="50%" valign="top">
-      <img src="src/test_data/spider.jpg" alt="Example 5" width="100%"><br>
-      <b>Question:</b> What do you see?<br>
-      <b>Answer:</b> A spider is shown on top of a leaf.<br><br>
-      <b>Question:</b> How many spiders are there?.<br>
-      <b>Answer:</b> No green.
-    </td>
-    <td width="33%" valign="top">
-      <img src="src/test_data/statue.jpg" alt="Example 6" width="100%"><br>
-      <b>Question:</b> What do you see?<br>
-      <b>Answer:</b> A statue of a man on a pedestal.<br><br>
-      <b>Question:</b> Are there any flags in the image?<br>
-      <b>Answer:</b> No, there is a flag but there is a flag.
-    </td>
-  </tr>
-  <tr>
-    <td width="33%" valign="top">
-      <img src="src/test_data/dog1.jpg" alt="Example 4" width="100%"><br>
-      <b>Question:</b> Describe this image.<br>
-      <b>Answer:</b> A brown dog sitting on top of a bed.<br><br>
-      <b>Question:</b> Describe this image.<br>
-      <b>Answer:</b> A dog laying down with a blue blanket.
-    </td>
-    <td width="33%" valign="top">
-      <img src="src/test_data/dog1.jpg" alt="Example 5" width="100%"><br>
-      <b>Question:</b> What do you see?<br>
-      <b>Answer:</b> A spider is shown on top of a leaf.<br><br>
-      <b>Question:</b> How many spiders are there?.<br>
-      <b>Answer:</b> No green.
-    </td>
-    <td width="33%" valign="top">
-      <img src="src/test_data/dog1.jpg" alt="Example 6" width="100%"><br>
-      <b>Question:</b> What do you see?<br>
-      <b>Answer:</b> A statue of a man on a pedestal.<br><br>
-      <b>Question:</b> Are there any flags in the image?<br>
-      <b>Answer:</b> No, there is a flag but there is a flag.
-    </td>
-  </tr>
-</table>
-
-**Sample images**
-
 **Sample images**
 
 - Example 1: [Chihuahua dog 1.jpg](https://commons.wikimedia.org/wiki/File:Chihuahua_dog_1.jpg) by Davidstern, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.en).
