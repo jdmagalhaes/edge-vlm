@@ -11,26 +11,62 @@ Below are some good and some less good output examples:
 
 <table>
   <tr>
-    <td width="33%" valign="top">
+    <td width="50%" valign="top">
       <img src="src/test_data/dog1.jpg" alt="Example 1" width="100%"><br>
       <b>Question:</b> Describe this image.<br>
       <b>Answer:</b> A brown dog sitting on top of a bed.<br><br>
       <b>Question:</b> Describe this image.<br>
       <b>Answer:</b> A dog laying down with a blue blanket.
     </td>
-    <td width="33%" valign="top">
-      <img src="src/test_data/dog1.jpg" alt="Example 2" width="100%"><br>
+    <td width="50%" valign="top">
+      <img src="src/test_data/spider.jpg" alt="Example 2" width="100%"><br>
+      <b>Question:</b> What do you see?<br>
+      <b>Answer:</b> A spider is shown on top of a leaf.<br><br>
+      <b>Question:</b> How many spiders are there?.<br>
+      <b>Answer:</b> No green.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="src/test_data/statue.jpg" alt="Example 3" width="100%"><br>
+      <b>Question:</b> What do you see?<br>
+      <b>Answer:</b> A statue of a man on a pedestal.<br><br>
+      <b>Question:</b> Describe this image in one or two sentences.<br>
+      <b>Answer:</b> In this image we can see a statue of a person standing on the ground. In the background we can see trees, buildings, trees, poles, sky and clouds.
+    </td>
+    <td width="50%" valign="top">
+      <img src="docs/images/church.png" alt="Example 4" width="100%"><br>
+      <b>Input:</b> What are the main elements of this image?<br>
+      <b>Output:</b> An old church with a large clock in the front.<br><br>
+      <b>Input:</b> What is in front of the church?<br>
+      <b>Output:</b> No, the sky is in front of the church.
+    </td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="src/test_data/dog1.jpg" alt="Example 4" width="100%"><br>
       <b>Question:</b> Describe this image.<br>
       <b>Answer:</b> A brown dog sitting on top of a bed.<br><br>
       <b>Question:</b> Describe this image.<br>
       <b>Answer:</b> A dog laying down with a blue blanket.
     </td>
+    <td width="50%" valign="top">
+      <img src="src/test_data/spider.jpg" alt="Example 5" width="100%"><br>
+      <b>Question:</b> What do you see?<br>
+      <b>Answer:</b> A spider is shown on top of a leaf.<br><br>
+      <b>Question:</b> How many spiders are there?.<br>
+      <b>Answer:</b> No green.
+    </td>
     <td width="33%" valign="top">
-      <img src="src/test_data/dog1.jpg" alt="Example 3" width="100%"><br>
-      <b>Question:</b> Describe this image.<br>
-      <b>Answer:</b> A brown dog sitting on top of a bed.<br><br>
-      <b>Question:</b> Describe this image.<br>
-      <b>Answer:</b> A dog laying down with a blue blanket.
+      <img src="src/test_data/statue.jpg" alt="Example 6" width="100%"><br>
+      <b>Question:</b> What do you see?<br>
+      <b>Answer:</b> A statue of a man on a pedestal.<br><br>
+      <b>Question:</b> Are there any flags in the image?<br>
+      <b>Answer:</b> No, there is a flag but there is a flag.
     </td>
   </tr>
   <tr>
@@ -43,20 +79,29 @@ Below are some good and some less good output examples:
     </td>
     <td width="33%" valign="top">
       <img src="src/test_data/dog1.jpg" alt="Example 5" width="100%"><br>
-      <b>Question:</b> Describe this image.<br>
-      <b>Answer:</b> A brown dog sitting on top of a bed.<br><br>
-      <b>Question:</b> Describe this image.<br>
-      <b>Answer:</b> A dog laying down with a blue blanket.
+      <b>Question:</b> What do you see?<br>
+      <b>Answer:</b> A spider is shown on top of a leaf.<br><br>
+      <b>Question:</b> How many spiders are there?.<br>
+      <b>Answer:</b> No green.
     </td>
     <td width="33%" valign="top">
       <img src="src/test_data/dog1.jpg" alt="Example 6" width="100%"><br>
-      <b>Question:</b> Describe this image.<br>
-      <b>Answer:</b> A brown dog sitting on top of a bed.<br><br>
-      <b>Question:</b> Describe this image.<br>
-      <b>Answer:</b> A dog laying down with a blue blanket.
+      <b>Question:</b> What do you see?<br>
+      <b>Answer:</b> A statue of a man on a pedestal.<br><br>
+      <b>Question:</b> Are there any flags in the image?<br>
+      <b>Answer:</b> No, there is a flag but there is a flag.
     </td>
   </tr>
 </table>
+
+**Sample images**
+
+**Sample images**
+
+- Example 1: [Chihuahua dog 1.jpg](https://commons.wikimedia.org/wiki/File:Chihuahua_dog_1.jpg) by Davidstern, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.en).
+- Example 2: [Malagasy green lynx spider](https://commons.wikimedia.org/wiki/File:Malagasy_green_lynx_spider_(Peucetia_madagascariensis)_male.jpg) by [Charles J. Sharp](https://www.wikidata.org/wiki/Q54800218), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en).
+- Example 3: [Statue of Liberty.JPG](https://commons.wikimedia.org/wiki/File:Statue_of_Liberty.JPG) by Eldar Kamalov, public domain.
+- Example 4: [Mölbling Gunzenberg Pfarrkirche](https://commons.wikimedia.org/wiki/File:M%C3%B6lbling_Gunzenberg_Pfarrkirche_hl._Florian_SSW-Ansicht_21102018_5110.jpg) by [Johann Jaritz](https://commons.wikimedia.org/wiki/User:Johann_Jaritz), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en).
 
 
 ## Model Architecture
@@ -198,5 +243,3 @@ uv run python inference.py
 ```
 
 By default, inference requires the fine-tuned checkpoint (`./checkpoints/best_model_ft.pt`), so run `finetune.py` first. To use the base model instead, set `checkpoint_path` in `load_model` to `cfg.CHECKPOINT_PATH`.
-
-Sample image: [Chihuahua dog 1.jpg](https://commons.wikimedia.org/wiki/File:Chihuahua_dog_1.jpg) by Davidstern, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.en).

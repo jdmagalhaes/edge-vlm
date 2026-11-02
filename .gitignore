@@ -17,4 +17,7 @@ src/model_for_coral.py
 src/json_data/
 src/test_data/*
 !src/test_data/dog1.jpg
+!src/test_data/spider.jpg
+!src/test_data/statue.jpg
+!src/test_data/church.jpg
 src/vocab
