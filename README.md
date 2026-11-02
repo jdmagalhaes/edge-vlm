@@ -12,14 +12,14 @@ Below are some good and some less good output examples:
 <table>
   <tr>
     <td width="50%" valign="top">
-      <img src="src/test_data/dog1.png" alt="Example 1" width="100%"><br>
+      <img src="./src/test_data/dog1.jpg" alt="Example 1" width="100%"><br>
       <b>Question:</b> Describe this image.<br>
       <b>Answer:</b> A brown dog sitting on top of a bed.<br><br>
       <b>Question:</b> Describe this image.<br>
       <b>Answer:</b> A dog laying down with a blue blanket.
     </td>
     <td width="50%" valign="top">
-      <img src="src/test_data/dog1.png" alt="Example 2" width="100%"><br>
+      <img src="src/test_data/dog1.jpg" alt="Example 2" width="100%"><br>
       <b>Question:</b> Describe this image.<br>
       <b>Answer:</b> A brown dog sitting on top of a bed.<br><br>
       <b>Question:</b> Describe this image.<br>
@@ -28,14 +28,14 @@ Below are some good and some less good output examples:
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <img src="src/test_data/dog1.png" alt="Example 3" width="100%"><br>
+      <img src="src/test_data/dog1.jpg" alt="Example 3" width="100%"><br>
       <b>Question:</b> Describe this image.<br>
       <b>Answer:</b> A brown dog sitting on top of a bed.<br><br>
       <b>Question:</b> Describe this image.<br>
       <b>Answer:</b> A dog laying down with a blue blanket.
     </td>
     <td width="50%" valign="top">
-      <img src="src/test_data/dog1.png" alt="Example 4" width="100%"><br>
+      <img src="src/test_data/dog1.jpg" alt="Example 4" width="100%"><br>
       <b>Question:</b> Describe this image.<br>
       <b>Answer:</b> A brown dog sitting on top of a bed.<br><br>
       <b>Question:</b> Describe this image.<br>
