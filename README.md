@@ -1,5 +1,3 @@
-(In progress)
-
 ## Edge Vision Language Model (DotVLM)
 DotVLM is an autoregressive, ~50M-parameter edge vision-language model.
 
@@ -44,7 +42,7 @@ Below are some good and some less good output examples:
   </tr>
 </table>
 
-**Sample images**
+#### Sample Images
 
 - Example 1: [Chihuahua dog 1.jpg](https://commons.wikimedia.org/wiki/File:Chihuahua_dog_1.jpg) by Davidstern, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.en).
 - Example 2: [Malagasy green lynx spider](https://commons.wikimedia.org/wiki/File:Malagasy_green_lynx_spider_(Peucetia_madagascariensis)_male.jpg) by [Charles J. Sharp](https://www.wikidata.org/wiki/Q54800218), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en).
