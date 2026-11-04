@@ -20,7 +20,7 @@ Below are some good and some less good output examples:
       <img src="src/test_data/spider.jpg" alt="Example 2" width="100%"><br>
       <b>Question:</b> What do you see?<br>
       <b>Answer:</b> A spider is shown on top of a leaf.<br><br>
-      <b>Question:</b> How many spiders are there?.<br>
+      <b>Question:</b> How many spiders are there?<br>
       <b>Answer:</b> No green.
     </td>
   </tr>
