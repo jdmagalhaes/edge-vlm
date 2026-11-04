@@ -1,7 +1,7 @@
 ## Edge Vision Language Model (DotVLM)
 DotVLM is an autoregressive, ~50M-parameter edge vision-language model.
 
-It was originally intended to run on the Coral Dev Micro. However, the board has several limitations (e.g., no support for operations such as LayerNorm or residual connections), which made direct deployment impossible. Adapting the model to fit these limitations severely degraded its performance, and end-to-end deployment on the board was never completed.
+It was originally intended to run on the [Google Coral Dev Board Micro](https://github.com/google-coral/coralmicro) (64 MB of SDRAM, Coral Edge TPU coprocessor). However, the board has several limitations (e.g., no support for operations such as LayerNorm or residual connections), which made direct deployment impossible. Adapting the model to fit these limitations severely degraded its performance, and end-to-end deployment on the board was never completed.
 
 This repo therefore archives the best working version of the pre-adapted DotVLM model.
 
@@ -59,7 +59,7 @@ The model's architecture consists of four main modules:
 - **Convolutional Decoder:** A causal temporal convolution network (TCN) of 7 dilated residual blocks run over the visual, question, and answer tokens, and a linear head predicts the answer tokens (teacher forcing in training, autoregressive at inference).
 
 ## Datasets and Vocabulary
-The model was trained from scratch using the following datasets and training/validation splits:
+The model was trained from scratch on an NVIDIA RTX 4070 using the following datasets and training/validation splits:
 
 | Dataset | Train images | Val images |
 |---|---:|---:|
